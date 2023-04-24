@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('code from scm') {
             steps {
-               git credentialsId: 'git-key', url: 'git@github.com:gopal1409/spring-chat-app-oct.git'
+               git branch: 'main', url: 'https://github.com/poorna162/cloud4cjenkins.git'
             }
         }
         stage('building the code') {
